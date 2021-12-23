@@ -1,0 +1,2 @@
+# Motivación
+Trabajar en la universidad ya es lo suficientemente cansado como para tener que ir generando cientos de documentos y burocracia. Por eso nace LSI bureacracy-killer, un bot de telegram que automatiza la mayoría de tareas a realizar por el profesorado que impliquen burocracia. 
