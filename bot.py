@@ -6,6 +6,7 @@ from typing import List
 
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+import os
 
 from comandos.justificante import genera_justificante
 
@@ -53,8 +54,8 @@ def justificante(update: Update, context: CallbackContext) -> None:
 def main() -> None:
     """Start the bot."""
     # Create the Updater and pass it your bot's token.
-    updater = Updater("5093419260:AAGqIgccppz2vt-ygOdoz0CtmFPvWnWgpNk")
-
+    token = os.environ['TOKEN']
+    updater = Updater(token)
     # Get the dispatcher to register handlers
     dispatcher = updater.dispatcher
 
