@@ -19,6 +19,6 @@ ADD . /codebase
 WORKDIR /codebase
 
 RUN pip3 install -r requirements.txt
-RUN chmod +x bot.py
+RUN chmod +x /codebase/bot.py
 
-CMD python3 bot.py;
+CMD python3 /codebase/bot.py;
